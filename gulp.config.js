@@ -41,7 +41,7 @@ module.exports = function() {
         cleanImages:  assets       + 'images/**/*.*',
         production:   production   + '**/**/*.*',
         proAssets:    production   + 'assets/**/*.*',
-        proIndex:     production   + 'index.html',
+        proIndex:     'index.html',
         cleanAssets:  [assets      + '**/**/*.*',
                  '!' + assets      + 'images/*.*'],
 
