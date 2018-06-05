@@ -11,39 +11,36 @@ module.exports = function() {
 
     var config       =  {
 
-        // all js to vet
-        alljs: ['./src/**/*.js', './*.js'],
+        allPug:       components   + 'pug/**/*.pug',
+        alljs:        ['./src/**/*.js', './*.js'],
+        assetImages:  assets       + 'images',
+        cleanCss: [   development  + 'css/**/*.css'],
+        cleanAssets:  [assets      + '**/**/*.*',
+                 '!' + assets      + 'images/*.*'],
+        cleanImages:  assets       + 'images/**/*.*',
+        cleanpug:                    '_includes/**/*.html',
         customJs:     development  + 'js/*.js',
-
-        index:        development  + 'index.html',
+        devCSS:       development  + 'css',
+        devCssMain:   development  + 'css/main.css',
+        devImages:    development  + 'images/**/*.*',
         development:  development,
+        includes:                    '_includes',
+        index:        development  + 'index.html',
+        jsAll:        development  + 'js/**/*.js',
         optimizeWatch:[
-
                       development  + '**/*.css',
                       development  + '**/*.js',
                       development  + '**/*.html'],
-
-        sassMain:     components   + 'sass/main.scss',
-        sassAll:      components   + 'sass/**/*.scss',
-        devCssMain:   development  + 'css/main.css',
-        devCSS:       development  + 'css',
-        siteCsS:      site         + 'assets/css',
-        cleanCss: [   development  + 'css/**/*.css'],
-        jsAll:        development  + 'js/**/*.js',
-        siteJs:       site         + 'assets/js',
-
-        pug:          components   + 'pug/*.pug',
-        allPug:       components   + 'pug/**/*.pug',
-        cleanpug:                    '_includes/**/*.html',
-        includes:                    '_includes',
-        devImages:    development  + 'images/**/*.*',
-        assetImages:  assets       + 'images',
-        cleanImages:  assets       + 'images/**/*.*',
         production:   production   + '**/**/*.*',
         proAssets:    production   + 'assets/**/*.*',
         proIndex:     'index.html',
-        cleanAssets:  [assets      + '**/**/*.*',
-                 '!' + assets      + 'images/*.*'],
+        pug:          components   + 'pug/*.pug',
+        sassMain:     components   + 'sass/main.scss',
+        sassAll:      components   + 'sass/**/*.scss',
+        siteCsS:      site         + 'assets/css',
+        siteJs:       site         + 'assets/js',
+
+
 
         /**
           * Bower and NPM locations
