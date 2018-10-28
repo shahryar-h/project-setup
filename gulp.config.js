@@ -35,8 +35,8 @@ module.exports = function() {
         proAssets:    production   + 'assets/**/*.*',
         proIndex:     'index.html',
         pug:          components   + 'pug/*.pug',
-        sassMain:     components   + 'sass/main.scss',
-        sassAll:      components   + 'sass/**/*.scss',
+        sassMain:     components   + 'sass/main.sass',
+        sassAll:      components   + 'sass/**/*.sass',
         siteCsS:      site         + 'assets/css',
         siteJs:       site         + 'assets/js',
 
